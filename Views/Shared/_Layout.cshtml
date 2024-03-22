@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - RobinBooks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RobinBooks.styles.css" asp-append-version="true" />
+</head>
+<body>
+    <header>
+    <header>
+        <header class="p-3 text-bg-dark bg-dark">
+            <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIzNC4yOSIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDEwMjQgODk2Ij48cGF0aCBmaWxsPSIjZmZmZmZmIiBkPSJNNTcwIDM4NGgzOHExMyAwIDIyLjUgOS41VDY0MCA0MTZ0LTkuNSAyMi41VDYwOCA0NDhoLTM4cS0xMCAyOC0zNC41IDQ2VDQ4MCA1MTJxLTQwIDAtNjgtMjh0LTI4LTY4dDI4LTY4dDY4LTI4cTMxIDAgNTUuNSAxOHQzNC41IDQ2bTQyMiA2NGgtMzRxLTkgMTAxLTcxLjUgMTg2LjVUNzI1IDc3MnQtMjEzIDU5djMzcTAgMTMtOS41IDIyLjVUNDgwIDg5NnQtMjIuNS05LjVUNDQ4IDg2NHYtOThxLTEwNi04LTE5Mi01OXYtNzZxOTcgNzMgMjI0IDczcTc0IDAgMTM3LTE1LjV0MTExLjUtNDZ0NzYtODAuNVQ4MzIgNDQ4cTAtODctNDctMTYwLjVUNjU3IDE3MXQtMTc3LTQzdC0xNzcgNDN0LTEyOCAxMTYuNVQxMjggNDQ4SDMycS0xMyAwLTIyLjUtOS41VDAgNDE2dDkuNS0yMi41VDMyIDM4NGgzOHExOC05OCA4NS0xNzUuNVQzMjAgOTRWNDFRNDEyIDAgNTEyIDBxMTE2IDAgMjE1LjUgNTF0MTYxIDEzOVQ5NTggMzg0aDM0cTEzIDAgMjIuNSA5LjV0OS41IDIyLjV0LTkuNSAyMi41VDk5MiA0NDgiLz48L3N2Zz4=" alt="LogoPepe's">
+                </a>
+                <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a  class="nav-link px-2 text-white" asp-controller="Libros" asp-action="Index">Inicio</a></li>
+                <li><a  class="nav-link px-2 text-white" asp-controller="PruebasR4" asp-action="Index" >Libros</a></li>
+                <li><a  class="nav-link px-2 text-white" asp-controller="Usuarios" asp-action="MostrarUsuarios">Usuarios</a></li>
+                <li><a  class="nav-link px-2 text-white" asp-controller="PruebasR4" asp-action="CrearUsuario">Registrate</a></li>
+                </ul>
+            </div>
+            </div>
+        </header>
+    </header>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - RobinBooks - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
