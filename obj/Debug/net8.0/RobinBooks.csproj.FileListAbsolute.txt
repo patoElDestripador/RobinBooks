@@ -28,3 +28,4 @@ C:\Users\pipel\Desktop\proyectosR\RobinBooks\obj\Debug\net8.0\refint\RobinBooks.
 C:\Users\pipel\Desktop\proyectosR\RobinBooks\obj\Debug\net8.0\RobinBooks.pdb
 C:\Users\pipel\Desktop\proyectosR\RobinBooks\obj\Debug\net8.0\RobinBooks.genruntimeconfig.cache
 C:\Users\pipel\Desktop\proyectosR\RobinBooks\obj\Debug\net8.0\ref\RobinBooks.dll
+C:\Users\pipel\Desktop\proyectosR\RobinBooks\obj\Debug\net8.0\RobinBooks.sourcelink.json

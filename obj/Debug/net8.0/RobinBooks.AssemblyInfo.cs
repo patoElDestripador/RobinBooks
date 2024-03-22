@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RobinBooks")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0da90fbe40478f4338b8a4449e7df24b81b8927d")]
 [assembly: System.Reflection.AssemblyProductAttribute("RobinBooks")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RobinBooks")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
