@@ -1,0 +1,55 @@
+@{
+    ViewBag.Title = "Iniciar sesión";
+    ViewBag.css = "login.css";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="~/css/login.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="formulario">
+        <div class="box">
+            <h1>Robin<strong>Books</strong></h1>
+            <p>Un libro una pasión</p>
+        </div>
+        <div class="login">
+            <div class="loginBox">
+                <input type="text" placeholder="Ingrese usuario o correo">
+                <input type="password" placeholder="Ingrese su password">
+                <a asp-controller="Home" asp-action="Index"><button>Ingresar</button></a>
+                <a>¿Forgot your password?</a>
+            </div>
+        </div>
+    </div>
+    @* <div class="container">
+    <div class="row">
+    <div class="col-md-6">
+    <form>
+    <div class="card">
+    <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input id="email" type="email" class="form-control" id="exampleInputEmail1"
+    aria-describedby="emailHelp">
+    </div>
+    <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input id="password" type="password" class="form-control" id="exampleInputPassword1">
+    </div>
+    <a type="submit" class="btn btn-primary" asp-controller="Home" asp-action="Index">Submit</a>
+    </div>
+    </form>
+    </div>
+    <div class="col-md-6">
+    <img class="cardImage"
+    src="https://images.pexels.com/photos/159866/books-book-pages-read-literature-159866.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    alt="Imagen">
+    </div>
+    </div>
+    </div> *@
+</body>
+
+</html>
