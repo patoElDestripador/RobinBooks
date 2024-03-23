@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.maps{
+    display: flex;
+    gap: 45px;
+
+    h2{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.slider img{
+    height: 500px;
+    width: 100vw;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.slider h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+
+    p{
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.card h3{
+    font-family: 'Poppins',sans-serif;
+    font-weight: bold;
+
+    
+}
+
+.card-body{
+    p{
+        font-family: 'Poppins',sans-serif;
+        color: #000;
+    }
+}

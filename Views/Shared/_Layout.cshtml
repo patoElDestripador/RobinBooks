@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/RobinBooks.styles.css" asp-append-version="true" />
+</head>
+
+<body>
+    <header>
+        <header>
+            <header class="p-3 text-bg-dark bg-dark">
+                <div class="container">
+                    <div
+                        class="nav d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start text-center ">
+                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                            <h1>Robin<span>Books</span></h1>
+                        </a>
+                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                            <li><a class="nav-link px-2 text-white" asp-controller="Libros"
+                                    asp-action="Index">Inicio</a></li>
+                            <li><a class="nav-link px-2 text-white" asp-controller="PruebasR4"
+                                    asp-action="Index">Libros</a></li>
+                            <li><a class="nav-link px-2 text-white" asp-controller="Usuarios"
+                                    asp-action="MostrarUsuarios">Usuarios</a></li>
+                            <li><a class="nav-link px-2 text-white" asp-controller="PruebasR4"
+                                    asp-action="CrearUsuario">Registrate</a></li>
+                        </ul>
+                    </div>
+                    <div
+                        class="header-right nav d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end text-center">
+                        <img src="@Url.Content("~/img/carrito.png")" alt="carrito de compras">
+                        <a asp-controller="Home" asp-action="Login">Iniciar sesión</a>
+                        <a asp-controller="Home" asp-action="Registro">Regístrate</a>
+                    </div>
+                </div>
+            </header>
+        </header>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    @* <footer class="border-top footer text-muted text-bg-dark bg-dark">
+        <div class="formulario container">
+            <h3><strong>Suscríbete para más información de interés</strong></h3>
+            <div class="form col-md-6 d-flex">
+                <input class="form-control" type="text" placeholder="Ingrese su correo">
+                <button class="btn btn-primary">Enviar</button>
+            </div>
+        </div>
+
+        <hr>
+
+        <p>&copy; RobinBooks 2024</p>
+    </footer> *@
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+
+</html>
