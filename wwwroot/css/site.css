@@ -20,3 +20,76 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.nav 
+h1 {
+  font-family: 'Poppins', sans-serif;
+
+  span {
+    color: #0AFB3A;
+  }
+
+}
+
+.nav li a{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 100;
+}
+
+
+.header-right{
+  display: flex;
+  justify-content: end;
+
+  a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin-right: 10px;
+  }
+
+  img{
+    margin-right: 10px;
+    cursor: pointer;
+  }
+}
+
+/*Hover*/
+.header-right a:hover{
+  color: goldenrod;
+  transition: 0.5s;
+}
+
+/*Footer*/
+footer{
+  height: 200px;
+
+  
+  h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    color: #fff;
+  }
+
+  
+}
+.formulario{
+  margin-top: 20px;
+  display: grid;
+  place-content: end;
+
+  .form{
+    width: 100%;
+
+    button {
+      margin-left: 10px;
+    }
+  }
+
+ 
+}
+p{
+  color: #fff;
+  font-family: 'Poppins',sans-serif;
+  text-align: center;
+}
