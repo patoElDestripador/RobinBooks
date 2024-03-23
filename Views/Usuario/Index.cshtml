@@ -1,0 +1,49 @@
+@{
+    ViewBag.Title = "usuarios";
+    ViewBag.Css = "usuarios.css";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="~/css/usuarios.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="main container mt-4">
+        <h1>Listado de usuarios</h1>
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped">
+                    <thead class="text-center">
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Edad</th>
+                        <th>Género</th>
+                        <th>Documento</th>
+                        <th>Teléfono</th>
+                        <th>Correo</th>
+                        <th>Acciones</th>
+                    </thead>
+                    <tbody class="text-center">
+                        <td>Fernando</td>
+                        <td>Gómez</td>
+                        <td>23</td>
+                        <td>M</td>
+                        <td>12344439</td>
+                        <td>3024559976</td>
+                        <td>fjgt2000@gmail.com</td>
+                        <td>
+                            <a class="btn btn-danger">Eliminar</a>
+                            <a class="btn btn-primary">Editar</a>
+                            <a class="btn btn-success">Detalles</a>
+                        </td>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
