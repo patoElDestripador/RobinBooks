@@ -1,8 +1,6 @@
 @{
-    ViewBag.Title = "usuarios";
-    ViewBag.Css = "usuarios.css";
+    ViewBag.Title = "Editar usuario";
 }
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,8 +10,7 @@
 
 <body>
     <div class="main container mt-4">
-        <h1>Listado de usuarios</h1>
-        <a class="link btn btn-light" asp-controller="Usuario" asp-action="Registrar">Crear nuevo usuario</a>
+        <h1>Detalles del usuario</h1>
         <div class="row">
             <div class="col-md-12">
                 <table class="table table-striped">
@@ -36,9 +33,7 @@
                         <td>3024559976</td>
                         <td>fjgt2000@gmail.com</td>
                         <td>
-                            <a class="btn btn-danger" asp-controller="Usuario" asp-action="Actualizar">Eliminar</a>
-                            <a class="btn btn-primary">Editar</a>
-                            <a class="btn btn-success" asp-controller="Usuario" asp-action="Detalles">Detalles</a>
+                            <a class="btn btn-success" asp-controller="Usuario" asp-action="Index">Regresar</a>
                         </td>
                     </tbody>
                 </table>

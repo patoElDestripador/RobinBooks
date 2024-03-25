@@ -1,0 +1,88 @@
+@{
+    ViewBag.Title = "Registrar usuario";
+}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="~/css/registrar.css" asp-append-version="true" />
+</head>
+
+<body>
+    <div class="container-fluid d-flex">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Nombre</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline" placeholder="Ingrese su nombre">
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="inputPassword6" class="col-form-label">Apellido</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" id="inputPassword6" class="form-control"
+                            aria-describedby="passwordHelpInline" placeholder="Ingrese apellido">
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="input1" class="col-form-label">Edad</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" id="input2" class="form-control"
+                            aria-describedby="passwordHelpInline" placeholder="Ingrese su edad">
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="input3" class="col-form-label">Género</label>
+                    </div>
+                    <div class="col-auto">
+                        <select name="select" id="select">
+                            <option value="Seleccionar...">seleccionar</option>
+                            <option value="Masculino">M</option>
+                            <option value="Femenino">F</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="input4" class="col-form-label">Documento</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" id="input4" class="form-control"
+                            aria-describedby="passwordHelpInline" placeholder="Ingrese su documento">
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="input5" class="col-form-label">Teléfono</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" id="input5" class="form-control"
+                            aria-describedby="passwordHelpInline" placeholder="Ingrese su teléfono">
+                    </div>
+                </div>
+                <div class="row g-3 align-items-center">
+                    <div class="col-auto">
+                        <label for="input6" class="col-form-label">Correo</label>
+                    </div>
+                    <div class="col-auto">
+                        <input type="text" id="input6" class="form-control"
+                            aria-describedby="passwordHelpInline" placeholder="Ingrese su correo">
+                    </div>
+                </div>
+            </div>
+            <a asp-controller="" asp-action="">Guardar</a>
+        </div>
+    </div>
+</body>
+
+</html>

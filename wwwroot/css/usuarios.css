@@ -13,4 +13,17 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 20px;
+
+    .link{
+        border: 1px solid #000;
+        width: 200px;
+        font-size: 17px;
+        font-weight: bold;
+        font-family: var(--primary-font);
+    }
+    .link:hover{
+        background-color: #000;
+        color: #fff;
+        transition: 0.6s;
+    }
 }
