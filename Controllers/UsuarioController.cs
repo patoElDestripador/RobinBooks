@@ -11,7 +11,7 @@ namespace Mvc.Controllers
             return View();
         }
 
-        public IActionResult Actualizar()
+        public IActionResult Eliminar()
         {
             return View();
         }

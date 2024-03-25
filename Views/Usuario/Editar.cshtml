@@ -1,10 +1,10 @@
 @{
-    ViewBag.Title = "Registrar usuario";
+    ViewBag.Title = "Editar";
 }
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="~/css/registrar.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/css/registrar.css" asp-append-version="true" />
 
 <head>
 
@@ -20,41 +20,41 @@
 
         <div class="container">
             <div class="title">
-                <h1>Registro crear usuario</h1>
+                <h1>Edición de usuario</h1>
             </div>
             <div class="col-md-12">
                 <div class="form-control">
                     <div class="mb-3">
                         <label for="text"><strong>Nombres</strong></label>
-                        <input class="form-control" type="text" placeholder="Ingrese su nombre">
+                        <input class="form-control" type="text" value="Fernando">
                     </div>
                     <div class="mb-3">
                         <label for="text"><strong>Apellidos</strong></label>
-                        <input class="form-control" type="text" placeholder="Ingrese sus apellidos">
+                        <input class="form-control" type="text" value="Gómez">
                     </div>
                     <div class="mb-3">
                         <label for="text"><strong>Edad</strong></label>
-                        <input class="form-control" type="text" placeholder="Edad">
+                        <input class="form-control" type="text" value="23">
                     </div>
                     <div class="mb-3">
                         <label for="text"><strong>Género</strong></label>
                         <input class="form-control" type="text"
-                            placeholder="Ingrese M si es másculino o F para femenino, de lo contrario ingrese otro">
+                            value="M">
                     </div>
                     <div class="mb-3">
                         <label for="text"><strong>Documento</strong></label>
-                        <input class="form-control" type="text" placeholder="Identificación">
+                        <input class="form-control" type="text" value="12344439">
                     </div>
                     <div class="mb-3">
                         <label for="text"><strong>Teléfono</strong></label>
-                        <input class="form-control" type="text" placeholder="Número de contacto">
+                        <input class="form-control" type="text" value="3024559976">
                     </div>
                     <div class="mb-3">
                         <label for="text"><strong>Correo</strong></label>
-                        <input class="form-control" type="text" placeholder="Correo electrónico">
+                        <input class="form-control" type="text" value="fjgt2000@gmail.com">
                     </div>
 
-                    <a class="btnCrearUsuario btn" asp-controller="Usuario" asp-action="Index">Registrar usuario</a>
+                    <a class="btnCrearUsuario btn" asp-controller="Usuario" asp-action="Index">Guardar cambios</a>
 
                 </div>
             </div>

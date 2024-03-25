@@ -36,6 +36,9 @@ h1 {
   font-weight: 100;
 }
 
+.header-left{
+  width: 70%;
+}
 
 .header-right{
   display: flex;

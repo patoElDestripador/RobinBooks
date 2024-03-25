@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    --primary-font: 'Poppins', sans-serif;
 }
 body{
     background-color: lightgrey;
@@ -27,15 +28,15 @@ body{
         color: green;
     }
 
-    .loginBox{
+    .registerBox{
         background-color: #fff;
         border: 1px solid black;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
         width: 300px;
-        height: 350px;
-        gap: 40px;
+        height: 500px;
+        gap: 10px;
 
         input{
             margin: 10px 0;
@@ -73,7 +74,6 @@ body{
         }
 
         a{
-            color: blue;
             cursor: pointer;
             text-decoration: none;
             text-align: center;

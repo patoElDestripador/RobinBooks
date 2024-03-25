@@ -7,6 +7,15 @@ namespace Mvc.Controllers {
         {
             return View();
         }
+
+        public IActionResult Registro()
+        {
+            return View();
+        }
+
+        public IActionResult Login()
+        {
+            return View();
+        }
     }
 }
-
