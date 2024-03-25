@@ -10,22 +10,23 @@ namespace Mvc.Controllers
         {
             return View();
         }
-        public IActionResult MostrarUsuario()
+
+        public IActionResult Actualizar()
         {
             return View();
         }
 
-        public IActionResult ValidarUsuario()
+        public IActionResult Editar()
         {
             return View();
         }
 
-        public IActionResult ActualizarUsuario()
+        public IActionResult Detalles()
         {
             return View();
         }
 
-        public IActionResult RegistrarUsuario()
+        public IActionResult Registrar()
         {
             return View();
         }
