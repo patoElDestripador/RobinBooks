@@ -1,0 +1,40 @@
+@{
+    var listLibros = ViewData["listLibros"] as List<LibroViewModel>;
+}
+
+
+<div class="container my-5">
+    <div class="bg-body-tertiary p-5 rounded">
+        <div class="col-sm-12 py-5 mx-auto">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Autor</th>
+                        <th scope="col">Género</th>
+                        <th scope="col">Estado</th>
+                        <th scope="col">ISBN</th>
+                        <th scope="col">Fecha Publicación</th>
+                        <th scope="col">Número Copias</th>
+                        <th scope="col">Opciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var lib in listLibros)
+                    {
+                        <tr>
+                            <td>@lib.Nombre</td>
+                            <td>@lib.Autor</td>
+                            <td>@lib.Genero</td>
+                            <td>@lib.Estado</td>
+                            <td>@lib.Isbn</td>
+                            <td>@lib.FechaPublicacion</td>
+                            <td>@lib.NumeroCopias</td>
+                            <td>Opciones</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
