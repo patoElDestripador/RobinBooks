@@ -96,7 +96,14 @@ public class LibrosController : Controller
         };
     }
 
-    public IActionResult Index()
+    public IActionResult MostrarLibrosView()
+    {
+        //Agregar en el diagrama que este es el view 
+        ViewData["Title"] = "Libros";
+        ViewData["listLibros"] = librosList;
+        return View();
+    }
+        public IActionResult Index()
     {
         ViewData["Title"] = "index";
         ViewData["listLibros"] = librosList;
