@@ -5,12 +5,44 @@
       "PackagePath": "staticwebassets\\RobinBooks.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\actualizarUsuario.css",
+      "PackagePath": "staticwebassets\\css\\actualizarUsuario.css"
+    },
+    {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\index.css",
+      "PackagePath": "staticwebassets\\css\\index.css"
+    },
+    {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\login.css",
+      "PackagePath": "staticwebassets\\css\\login.css"
+    },
+    {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\registrar.css",
+      "PackagePath": "staticwebassets\\css\\registrar.css"
+    },
+    {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\registro.css",
+      "PackagePath": "staticwebassets\\css\\registro.css"
+    },
+    {
       "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\css\\usuarios.css",
+      "PackagePath": "staticwebassets\\css\\usuarios.css"
+    },
+    {
       "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\img\\RobinBooks.svg",
+      "PackagePath": "staticwebassets\\img\\RobinBooks.svg"
+    },
+    {
+      "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\img\\carrito.png",
+      "PackagePath": "staticwebassets\\img\\carrito.png"
     },
     {
       "Id": "C:\\Users\\pipel\\Desktop\\proyectosR\\RobinBooks\\wwwroot\\js\\site.js",

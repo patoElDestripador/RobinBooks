@@ -4,43 +4,37 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMCIgaGVpZ2h0PSI4Ljc1IiB2aWV3Qm94PSIwIDAgMTAyNCA4OTYiPjxwYXRoIGZpbGw9IiNmZmZmZmYiIGQ9Ik01NzAgMzg0aDM4cTEzIDAgMjIuNSA5LjVUNjQwIDQxNnQtOS41IDIyLjVUNjA4IDQ0OGgtMzhxLTEwIDI4LTM0LjUgNDZUNDgwIDUxMnEtNDAgMC02OC0yOHQtMjgtNjh0MjgtNjh0NjgtMjhxMzEgMCA1NS41IDE4dDM0LjUgNDZtNDIyIDY0aC0zNHEtOSAxMDEtNzEuNSAxODYuNVQ3MjUgNzcydC0yMTMgNTl2MzNxMCAxMy05LjUgMjIuNVQ0ODAgODk2dC0yMi41LTkuNVQ0NDggODY0di05OHEtMTA2LTgtMTkyLTU5di03NnE5NyA3MyAyMjQgNzNxNzQgMCAxMzctMTUuNXQxMTEuNS00NnQ3Ni04MC41VDgzMiA0NDhxMC04Ny00Ny0xNjAuNVQ2NTcgMTcxdC0xNzctNDN0LTE3NyA0M3QtMTI4IDExNi41VDEyOCA0NDhIMzJxLTEzIDAtMjIuNS05LjVUMCA0MTZ0OS41LTIyLjVUMzIgMzg0aDM4cTE4LTk4IDg1LTE3NS41VDMyMCA5NFY0MVE0MTIgMCA1MTIgMHExMTYgMCAyMTUuNSA1MXQxNjEgMTM5VDk1OCAzODRoMzRxMTMgMCAyMi41IDkuNXQ5LjUgMjIuNXQtOS41IDIyLjVUOTkyIDQ0OCIvPjwvc3ZnPg==" />
     <title>@ViewData["Title"]</title>
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/css/index.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/RobinBooks.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/RobinBooks.styles.css" asp-append-version="true"/>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" asp-append-version="true" />
 </head>
 
 <body>
-    <header>
-        <header>
-            <header class="p-3 text-bg-dark bg-dark">
-                <div class="container">
-                    <div
-                        class="header-left nav d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start text-center ">
-                        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-                            <h1>Robin<span>Books</span></h1>
-                        </a>
-                        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                            <li><a class="nav-link px-2 text-white" asp-controller="Libros"
-                                    asp-action="Index">Inicio</a></li>
-                            <li><a class="nav-link px-2 text-white" asp-controller="Libros"
-                                    asp-action="Index">Libros</a></li>
-                            <li><a class="nav-link px-2 text-white" asp-controller="Usuario"
-                                    asp-action="Index">Usuarios</a></li>
-                            <li><a class="nav-link px-2 text-white" asp-controller="Home"
-                                    asp-action="Registro">Registrate</a></li>
-                        </ul>
-                    </div>
-                    <div
-                        class="header-right nav d-flex flex-wrap align-items-center justify-content-center justify-content-lg-end text-center">
-                        <img src="@Url.Content("~/img/carrito.png")" alt="carrito de compras">
-                        <a asp-controller="Home" asp-action="Login">Iniciar sesión</a>
-                        <a asp-controller="Home" asp-action="Registro">Regístrate</a>
-                    </div>
+
+        <header class="p-3 text-bg-dark bg-dark">
+        <div class="container">
+            <div class="header-content d-flex flex-wrap align-items-center justify-content-between text-center gap-2">
+                <a asp-controller="Home" asp-action="Index" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                    <!--
+                    <h1>Robin<span class="spans">Books</span></h1>
+                    --> 
+                    <img src="@Url.Content("~/img/RobinBooks.svg")" width="200" class="mb-3" alt="logotipo RobinBooks" />    
+                </a>
+                <ul id="navList" class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a class="nav-link px-2 txt-decoration" asp-controller="Home" asp-action="Index">Inicio</a></li>
+                <li><a class="nav-link px-2 txt-decoration" asp-controller="Libros" asp-action="Index">Libros</a></li>
+                <li><a class="nav-link px-2 txt-decoration" asp-controller="Usuario" asp-action="Index">Usuarios</a></li>
+                </ul>
+                <div class="text-white text-decoration-none header-right d-flex flex-wrap align-items-center justify-content-center text-center">
+                    <svg class="carrito" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 2048 2048"><path fill="#ffffff" d="M1600 1536q40 0 75 15t61 41t41 61t15 75q0 40-15 75t-41 61t-61 41t-75 15q-40 0-75-15t-61-41t-41-61t-15-75q0-31 11-64H885q11 33 11 64q0 40-15 75t-41 61t-61 41t-75 15q-40 0-75-15t-61-41t-41-61t-15-75q0-55 29-102t80-71L189 256H0V128h281l85 256h1682l-298 896H665l85 256zM409 512l213 640h1035l213-640zm359 1216q0-26-19-45t-45-19q-26 0-45 19t-19 45q0 26 19 45t45 19q26 0 45-19t19-45m832 64q26 0 45-19t19-45q0-26-19-45t-45-19q-26 0-45 19t-19 45q0 26 19 45t45 19"/></svg>
+                    <a class="ms-3" asp-controller="Home" asp-action="Login">Iniciar sesión</a>
+                    <a asp-controller="Home" asp-action="Registro">Regístrate</a>
                 </div>
-            </header>
-        </header>
+            </div>
+        </div>
     </header>
 
     <div class="container">
@@ -57,6 +51,7 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

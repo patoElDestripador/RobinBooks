@@ -3,9 +3,11 @@
 }
 
 
-<div class="container my-5">
-    <div class="bg-body-tertiary p-5 rounded">
+<div class="container">
+    <div class="bg-body-tertiary p-3 rounded">
+        <button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#modalFormulario1"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24"><path fill="#ffffff" d="M11 13H5v-2h6V5h2v6h6v2h-6v6h-2z"/></svg>Agregar Libro</button>
         <div class="col-sm-12 py-5 mx-auto">
+        
             <table class="table">
                 <thead>
                     <tr>
@@ -30,11 +32,81 @@
                             <td>@lib.Isbn</td>
                             <td>@lib.FechaPublicacion</td>
                             <td>@lib.NumeroCopias</td>
-                            <td>Opciones</td>
+                            <td>
+                                <div class="btn-group" role="group">
+                                    <button type="button" id="idEliminarBtn" class="btn btn-danger"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7h16m-10 4v6m4-6v6M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-12M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3"/></svg></button>
+                                    <button type="button" id="idInforBtn" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modalFormulario1"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m9-3h.01"/><path d="M11 12h1v4h1"/></g></svg></button>
+                                    <button type="button" id="idEditarBtn" class="btn btn-success"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M7 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-1"/><path d="M20.385 6.585a2.1 2.1 0 0 0-2.97-2.97L9 12v3h3zM16 5l3 3"/></g></svg></button>
+                                </div>
+                            </td>
                         </tr>
                     }
                 </tbody>
             </table>
         </div>
     </div>
+    
+    <div class="modal fade " id="modalFormulario1" aria-labelledby="exampleModalLabel" >
+            <div class="modal-dialog modal-dialog-centered modal-lg ">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" >Agregar Nuevo Lirbo</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="row">    
+                        <div class="mb-3 col-6">
+                            <label for="idInputNombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="idInputNombre" placeholder="El principito">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="idInputAutor" class="form-label">Autor</label>
+                            <input type="text" class="form-control" id="idInputAutor"  placeholder="Antoine de Saint-Exupéry">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="idInputGenero" class="form-label">Genero</label>
+                            <input type="text" class="form-control" id="idInputGenero" placeholder="Literatura infantil">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="idInputEstado" class="form-label">Estado</label>
+                            <select id="idInputEstado" class="form-select" aria-label="Default select example">
+                                <option selected value="1">Disponible</option>
+                                <option value="2">Mantenimiento</option>
+                                <option value="3">Perdido</option>
+                                <option value="4">Prestado</option>
+                            </select>
+                                                
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="idInputIsbn" class="form-label">Isbn</label>
+                            <input type="text" class="form-control" id="idInputIsbn" placeholder="ISBN 978-84-9804-260-2">
+                        </div>
+                        <div class="mb-3 col-6">
+                            <label for="idInputidInputFechaPublicacion" class="form-label">Fecha de Publicacion</label>
+                            <input type="date" class="form-control" id="idInputFechaPublicacion" placeholder="6 de abril de 1943">
+                        </div>
+                        <div class="mb-3 col-3">
+                            <label for="idInputNumeroCopias" class="form-label" >Numero de Copias</label>
+                            <input type="number" class="form-control" id="idInputNumeroCopias" placeholder="30">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    <button id="idGuardarBtn" type="button" class="btn btn-success" data-bs-dismiss="modal" asp-controller="Libros" asp-action="RegistrarLibro" >Guardar</button>
+                </div>
+                </div>
+            </div>
+    </div>
+
 </div>
+
+
+
+
+
+
+
+
+
+

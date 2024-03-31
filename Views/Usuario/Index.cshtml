@@ -44,9 +44,33 @@
                         <td>2024-03-05</td>
                         <td>Pendiente</td>
                         <td>
-                            <a class="btn btn-danger" asp-controller="Usuario" asp-action="Eliminar">Eliminar</a>
-                            <a class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">Editar</a>
-                            <a class="btn btn-success" asp-controller="Usuario" asp-action="Detalles">Detalles</a>
+                            <div class="btn-group" role="group">
+                                <a asp-controller="Usuario" asp-action="Eliminar" class="btn btn-danger">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <path fill="none" stroke="#ffffff" stroke-linecap="round"
+                                            stroke-linejoin="round" stroke-width="2"
+                                            d="M4 7h16m-10 4v6m4-6v6M5 7l1 12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2l1-12M9 7V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v3" />
+                                    </svg>
+                                </a>
+                                <a asp-controller="Usuario" asp-action="Detalles" class="btn btn-info">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0-18 0m9-3h.01" />
+                                            <path d="M11 12h1v4h1" />
+                                        </g>
+                                    </svg>
+                                </a>
+                                <a asp-controller="Usuario" asp-action="Editar" class="btn btn-success">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                                        <g fill="none" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round"
+                                            stroke-width="2">
+                                            <path d="M7 7H6a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2-2v-1" />
+                                            <path d="M20.385 6.585a2.1 2.1 0 0 0-2.97-2.97L9 12v3h3zM16 5l3 3" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
                         </td>
                     </tbody>
                 </table>

@@ -22,6 +22,14 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/home/Registro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcaG9tZVxSZWdpc3Ryby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Libros/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTGlicm9zXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,6 +44,30 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuarios/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuario/Actualizar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xBY3R1YWxpemFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuario/Detalles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xEZXRhbGxlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuario/Editar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFZGl0YXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuario/Eliminar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xFbGltaW5hci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuario/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/Usuario/Registrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xSZWdpc3RyYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/pipel/Desktop/proyectosR/RobinBooks/Views/_ViewImports.cshtml]
